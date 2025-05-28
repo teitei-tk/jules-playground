@@ -1,8 +1,8 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
-import eslintConfigPrettier from "eslint-config-prettier";
-import eslintPluginPrettier from "eslint-plugin-prettier";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import eslintPluginPrettier from 'eslint-plugin-prettier';
 
 export default [
   { languageOptions: { globals: globals.node } },
@@ -12,14 +12,13 @@ export default [
   {
     plugins: { prettier: eslintPluginPrettier },
     rules: {
-      "prettier/prettier": "error",
+      'prettier/prettier': 'error',
     },
   },
   {
-    rules: {
-    },
+    rules: {},
   },
   {
-    ignores: ["dist/", "node_modules/"],
-  }
+    ignores: ['dist/', 'node_modules/'],
+  },
 ];
